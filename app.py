@@ -1,5 +1,5 @@
 ###################################################################
-# ReFlaskr
+# reflaskr
 # --------
 # Minimal blog engine based on Python's Flask Tutorial
 # http://flask.pocoo.org/docs/tutorial/

@@ -14,9 +14,14 @@ Installation
 
     `cd reflaskr`
 
-3.  Run the app!
+3.  Create the database:
+
+    `sqlite3 /tmp/flaskr.db < schema.sql`
+
+4.  Run the app!
 
     `python app.py`
+
 	
 To run the app correctly you will require following Python prerequisites installed:
 *   [flask](http://flask.pocoo.org/) (and all it's prerequisites)
