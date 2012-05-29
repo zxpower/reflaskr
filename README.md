@@ -7,10 +7,15 @@ Installation
 ------------
 
 1.  Get it from here using [ZIPball](https://github.com/digiblink/reflaskr/zipball/master) or cloning it by git:
+
 	git://github.com/digiblink/reflaskr.git
+
 2.  Go into freshly created folder:
+
 	cd reflaskr
+
 3.  Run the app!
+
 	python app.py
 	
 To run the app correctly you will require following Python prerequisites installed:
