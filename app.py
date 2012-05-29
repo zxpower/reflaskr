@@ -1,3 +1,12 @@
+###################################################################
+# ReFlaskr
+# --------
+# Minimal blog engine based on Python's Flask Tutorial
+# http://flask.pocoo.org/docs/tutorial/
+# 
+# Created by: digiBlink - http://digibling.eu/
+################################################################### 
+
 # all the imports
 from __future__ import with_statement
 from sqlite3 import dbapi2 as sqlite3
@@ -9,9 +18,11 @@ from flask import Flask, request, session, g, redirect, url_for, \
 app = Flask(__name__)
 app.config.from_pyfile('app.cfg')
 
+# let's connect to DB
 def connect_db():
 	return sqlite3.connect(app.config['DATABASE'])
 
+# let's initialize it if it's not already done
 def init_db():
 	with closing(connect_db()) as db:
 		with app.open_resource('schema.sql') as f:
@@ -32,8 +43,6 @@ def show_entries():
 	entries = [dict(id=row[0], title=row[1], text=row[2]) for row in cur.fetchall()]
 	return render_template('show_entries.html', entries=entries)
 
-#@app.route('/ADD', methods=['POST'])
-#@app.route('/Add', methods=['POST'])
 @app.route('/add', methods=['POST'])
 def add_entry():
 	if not session.get('logged_in'):
@@ -44,14 +53,10 @@ def add_entry():
 	flash('New entry was successfully posted')
 	return redirect(url_for('show_entries'))
 
-#@app.route('/EDIT/<int:articleid>', methods=['GET', 'POST'])	
-#@app.route('/Edit/<int:articleid>', methods=['GET', 'POST'])
 @app.route('/edit/<int:articleid>', methods=['GET', 'POST'])
 def edit_entry(articleid):
 	return redirect(url_for('show_entries'))
 
-#@app.route('/DELETE/<int:articleid>', methods=['GET', 'POST'])	
-#@app.route('/Delete/<int:articleid>', methods=['GET', 'POST'])
 @app.route('/delete/<int:articleid>', methods=['GET', 'POST'])
 def delete_entry(articleid):
 	if not session.get('logged_in'):
@@ -59,8 +64,6 @@ def delete_entry(articleid):
 	return "Article ID:" + str(articleid)
 #	return redirect(url_for('show_entries'))
 
-#@app.route('/LOGIN', methods=['GET', 'POST'])
-#@app.route('/Login', methods=['GET', 'POST'])
 @app.route('/login', methods=['GET', 'POST'])
 def login():
 	error = None
@@ -75,8 +78,6 @@ def login():
 			return redirect(url_for('show_entries'))
 	return render_template('login.html', error=error)
 
-#@app.route('/LOGOUT')
-#@app.route('/Logout')
 @app.route('/logout')
 def logout():
 	session.pop('logged_in', None)
