@@ -3,6 +3,8 @@ reflaskr
 
 Updated version of blog app Flaskr from Python tiny MVC framework [Flask tutorial](http://flask.pocoo.org/docs/tutorial/)
 
+_by [digiBlink] (http://digiblink.eu/)
+
 Installation
 ------------
 
@@ -30,4 +32,8 @@ To run the app correctly you will require following Python prerequisites install
 Support
 -------
 
-Report all problems in reflaskr [issues](https://github.com/digiblink/reflaskr/issues).
+If you run into any issues, visit [project's issue page](https://github.com/digiblink/reflaskr/issues) and report an issue.
+
+This is free software so feel free to use it/modify it as you wish.
+
+If you have any ideas for the next release make sure to post them here!
