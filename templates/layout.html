@@ -1,12 +1,12 @@
 <!doctype html>
 <head>
-	<title>Flaskr</title>
+	<title>reflaskr</title>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-	<div class=page>
-		<a href="{{ url_for('show_entries') }}"><h1>Flaskr</h1></a>
-		<div class=metanav>
+	<div class="page">
+		<a href="{{ url_for('show_entries') }}"><h1>reflaskr</h1></a>
+		<div class="metanav">
 		{% if not session.logged_in %}
 			<a href="{{ url_for('login') }}">log in</a>
 		{% else %}
@@ -14,9 +14,13 @@
 		{% endif %}
 		</div>
 		{% for message in get_flashed_messages() %}
-		<div class=flash>{{ message }}</div>
+		<div class="flash">{{ message }}</div>
 		{% endfor %}
 		{% block body %}{% endblock %}
+	</div>
+	<div class="footer">
+		Created by <a href="http://digiblink.eu">digiBlink</a>. 
+		Get the reflaskr code from <a href="https://github.com/digiblink/reflaskr">GitHub</a>!
 	</div>
 	
 	<!-- JavaScript at the bottom for fast page loading -->
