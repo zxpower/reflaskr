@@ -11,9 +11,9 @@
       </dl>
     </form>
   {% endif %}
-  <ul class=entries>
+  <ul class="entries">
   {% for entry in entries %}
-    <li><h2>{{ entry.title }}</h2>{{ entry.text|safe }}
+    <li id="article_{{ entry.id }}"><h2>{{ entry.title }}</h2>{{ entry.text|safe }}
     	{% if session.logged_in %}
     	<div class="actions">Actions: 
     		<a href="{{ url_for('edit_entry', articleid=entry.id) }}">Edit</a> |

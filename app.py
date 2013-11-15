@@ -29,6 +29,12 @@ def init_db():
 			db.cursor().executescript(f.read())
 		db.commit()
 
+def query_db(query, args=(), one=False):
+    cur = g.db.execute(query, args)
+    rv = cur.fetchall()
+    cur.close()
+    return (rv[0] if rv else None) if one else rv
+
 @app.before_request
 def before_request():
 	g.db = connect_db()
@@ -55,14 +61,18 @@ def add_entry():
 
 @app.route('/edit/<int:articleid>', methods=['GET', 'POST'])
 def edit_entry(articleid):
-	return redirect(url_for('show_entries'))
+	if not session.get('logged_in'):
+		abort(401)
+	entry = query_db('select * from entries where id = ?', [articleid], one=True) 
+	return render_template('show_entries.html', entries=entry)
 
 @app.route('/delete/<int:articleid>', methods=['GET', 'POST'])
 def delete_entry(articleid):
 	if not session.get('logged_in'):
 		abort(401)
-	return "Article ID:" + str(articleid)
-#	return redirect(url_for('show_entries'))
+	g.db.execute('delete from entries where id = ?', [articleid])
+	g.db.commit()
+	return str(articleid)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
