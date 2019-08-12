@@ -8,7 +8,7 @@ _by [digiBlink](http://digiblink.eu/)_
 
 1.  Get it from here using [ZIPball](https://github.com/zxpower/reflaskr/zipball/master) or cloning it by git:
 
-    `git://github.com/zxpower/reflaskr.git`
+    `git clone https://github.com/zxpower/reflaskr.git`
 
 2.  Go into freshly created folder:
 
