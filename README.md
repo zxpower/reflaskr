@@ -40,7 +40,7 @@ To run the app correctly you will require following Python prerequisites install
 
 3.  Now you're able to access `reflaskr` by opening [http://localhost:8080/](http://localhost:8080/).
 
-**Note** - Docker image built is run as `non-root` user for security measures. You can use it as blueprint for creating your own Docker images for running `flask` in production.
+**Note** - Docker image built is run as `non-root` user for security measures. You can use it as blueprint for creating your own Docker images for running `flask` in production. [This article](https://medium.com/@smirnov.am/running-flask-in-production-with-docker-1932c88f14d0) contains some hints on how the image is built and how it could be used or debugged.
 
 ## Support
 
