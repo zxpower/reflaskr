@@ -12,7 +12,7 @@ _by [digiBlink](http://digiblink.eu/)_
 
 2.  Go into freshly created folder:
 
-    `cd reflaskr`
+    `cd reflaskr/src`
 
 3.  Create the database:
 
@@ -20,7 +20,7 @@ _by [digiBlink](http://digiblink.eu/)_
 
 4.  Run the app!
 
-    `python app.py`
+    `python app.py` or `python3 app.py`
 
 5.  Open [http://localhost:5000/](http://localhost:5000/) in your browser to test the site. Use `admin` as username and `default` as password to login to system.
 	
