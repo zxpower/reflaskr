@@ -6,9 +6,9 @@ _by [digiBlink](http://digiblink.eu/)_
 
 ## Installation
 
-1.  Get it from here using [ZIPball](https://github.com/digiblink/reflaskr/zipball/master) or cloning it by git:
+1.  Get it from here using [ZIPball](https://github.com/zxpower/reflaskr/zipball/master) or cloning it by git:
 
-    `git://github.com/digiblink/reflaskr.git`
+    `git://github.com/zxpower/reflaskr.git`
 
 2.  Go into freshly created folder:
 
@@ -44,8 +44,8 @@ To run the app correctly you will require following Python prerequisites install
 
 ## Support
 
-If you run into any issues, visit [project's issue page](https://github.com/digiblink/reflaskr/issues) and report an issue.
+If you run into any issues, visit [project's issue page](https://github.com/zxpower/reflaskr/issues) and report an issue.
 
 This is free software so feel free to use it/modify it as you wish.
 
-If you have any ideas for the next release make sure to post them [here](https://github.com/digiblink/reflaskr/issues) and mark them as `feature-request`!
+If you have any ideas for the next release make sure to post them [here](https://github.com/zxpower/reflaskr/issues) and mark them as `feature-request`!
