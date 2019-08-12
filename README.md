@@ -22,10 +22,11 @@ _by [digiBlink](http://digiblink.eu/)_
 
     `python app.py`
 
+5.  Open [http://localhost:5000/](http://localhost:5000/) in your browser to test the site. Use `admin` as username and `default` as password to login to system.
 	
 To run the app correctly you will require following Python prerequisites installed:
-*  [flask](http://flask.pocoo.org/) (and all it's prerequisites)
-*  [sqlite](http://sqlite.org/) and it's [bindings](http://wiki.python.org/moin/SQLite)
+*  [`flask`](http://flask.pocoo.org/) (and all it's prerequisites)
+*  [`sqlite`](http://sqlite.org/) and it's [bindings](http://wiki.python.org/moin/SQLite)
 
 ## Support
 
