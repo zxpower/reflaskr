@@ -1,12 +1,10 @@
-reflaskr
-========
+# ReFlaskr
 
 Updated version of blog app Flaskr from Python tiny MVC framework [Flask tutorial](http://flask.pocoo.org/docs/tutorial/)
 
-_by [digiBlink] (http://digiblink.eu/)_
+_by [digiBlink](http://digiblink.eu/)_
 
-Installation
-------------
+## Installation
 
 1.  Get it from here using [ZIPball](https://github.com/digiblink/reflaskr/zipball/master) or cloning it by git:
 
@@ -26,14 +24,13 @@ Installation
 
 	
 To run the app correctly you will require following Python prerequisites installed:
-*   [flask](http://flask.pocoo.org/) (and all it's prerequisites)
-*   [sqlite](http://sqlite.org/) and it's [bindings](http://wiki.python.org/moin/SQLite)
+*  [flask](http://flask.pocoo.org/) (and all it's prerequisites)
+*  [sqlite](http://sqlite.org/) and it's [bindings](http://wiki.python.org/moin/SQLite)
 
-Support
--------
+## Support
 
 If you run into any issues, visit [project's issue page](https://github.com/digiblink/reflaskr/issues) and report an issue.
 
 This is free software so feel free to use it/modify it as you wish.
 
-If you have any ideas for the next release make sure to post them here!
+If you have any ideas for the next release make sure to post them [here](https://github.com/digiblink/reflaskr/issues) and mark them as `feature-request`!
