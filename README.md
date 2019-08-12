@@ -28,6 +28,20 @@ To run the app correctly you will require following Python prerequisites install
 *  [`flask`](http://flask.pocoo.org/) (and all it's prerequisites)
 *  [`sqlite`](http://sqlite.org/) and it's [bindings](http://wiki.python.org/moin/SQLite)
 
+## Building and running Docker image
+
+1.  You can run everything via [Docker](https://www.docker.com/). First you need to build the image that can be done using script provided:
+
+    `buildImage.sh` - will produce a local image
+
+2.  Next you need to run your newly built container using:
+
+    `docker run --name reflaskr -d -p 8080:8080 reflaskr:latest`
+
+3.  Now you're able to access `reflaskr` by opening [http://localhost:8080/](http://localhost:8080/).
+
+**Note** - Docker image built is run as `non-root` user for security measures. You can use it as blueprint for creating your own Docker images for running `flask` in production.
+
 ## Support
 
 If you run into any issues, visit [project's issue page](https://github.com/digiblink/reflaskr/issues) and report an issue.
