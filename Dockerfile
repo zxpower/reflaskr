@@ -1,4 +1,4 @@
-FROM python:3.7-slim-stretch
+FROM python:3.10-slim-bullseye
 
 RUN mkdir /app; chown -R 1000:1000 /app;
 WORKDIR /app
