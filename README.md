@@ -2,7 +2,7 @@
 
 Updated version of blog app Flaskr from Python tiny MVC framework [Flask tutorial](http://flask.pocoo.org/docs/tutorial/)
 
-_by [digiBlink](http://digiblink.eu/)_
+_by [digiBlink](https://digiblink.eu/)_
 
 ## Installation
 
