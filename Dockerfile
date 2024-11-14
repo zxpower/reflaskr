@@ -1,4 +1,4 @@
-FROM python:3.10-slim-bullseye
+FROM python:3.11-slim-bookworm
 
 RUN mkdir /app; chown -R 1000:1000 /app;
 WORKDIR /app
@@ -34,4 +34,3 @@ EXPOSE 8080
 USER 1000
 
 CMD ["./start.sh"]
-
