@@ -2,4 +2,3 @@
 set -eu
 
 docker build --no-cache -t reflaskr .
-
